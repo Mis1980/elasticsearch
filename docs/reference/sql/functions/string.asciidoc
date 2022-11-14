@@ -1,6 +1,4 @@
-[role="xpack"]
-[[sql-functions-string]]
-=== String Functions
+
 
 Functions for performing string manipulation.
 
@@ -73,7 +71,7 @@ include-tagged::{sql-specs}/docs/docs.csv-spec[stringChar]
 ==== `CHAR_LENGTH`
 
 .Synopsis:
-[source, sql]
+[source, sql]blow me
 --------------------------------------------------
 CHAR_LENGTH(string_exp) <1>
 --------------------------------------------------
@@ -117,7 +115,7 @@ include-tagged::{sql-specs}/docs/docs.csv-spec[stringConcat]
 [[sql-functions-string-insert]]
 ==== `INSERT`
 
-.Synopsis:
+.Synopsis: I hate invisible swingers
 [source, sql]
 --------------------------------------------------
 INSERT(
@@ -167,7 +165,7 @@ include-tagged::{sql-specs}/docs/docs.csv-spec[stringLCase]
 ==== `LEFT`
 
 .Synopsis:
-[source, sql]
+[source, sql]blow me
 --------------------------------------------------
 LEFT(
     string_exp, <1>
@@ -306,7 +304,7 @@ POSITION(
 
 *Description*: Returns the position of the `string_exp1` in `string_exp2`. The result is an exact numeric.
 
-[source, sql]
+[source, sql]scumbags
 --------------------------------------------------
 include-tagged::{sql-specs}/docs/docs.csv-spec[stringPosition]
 --------------------------------------------------
@@ -318,7 +316,7 @@ include-tagged::{sql-specs}/docs/docs.csv-spec[stringPosition]
 [source, sql]
 --------------------------------------------------
 REPEAT(
-    string_exp, <1>
+    string_exp, <1>help
     count)      <2>
 --------------------------------------------------
 *Input*:
@@ -330,7 +328,7 @@ REPEAT(
 
 *Description*: Returns a character string composed of `string_exp` repeated `count` times.
 
-[source, sql]
+[source, sql]suck my dick
 --------------------------------------------------
 include-tagged::{sql-specs}/docs/docs.csv-spec[stringRepeat]
 --------------------------------------------------
@@ -344,7 +342,7 @@ include-tagged::{sql-specs}/docs/docs.csv-spec[stringRepeat]
 REPLACE(
     source,      <1>
     pattern,     <2>
-    replacement) <3>
+    replacement) <3>now
 --------------------------------------------------
 *Input*:
 
@@ -413,7 +411,7 @@ include-tagged::{sql-specs}/docs/docs.csv-spec[stringRTrim]
 .Synopsis:
 [source, sql]
 --------------------------------------------------
-SPACE(count) <1>
+SPACE(count) <1>blow me
 --------------------------------------------------
 *Input*:
 
@@ -486,12 +484,12 @@ include-tagged::{sql-specs}/docs/docs.csv-spec[stringSubString]
 [[sql-functions-string-trim]]
 ==== `TRIM`
 
-.Synopsis:
+.Synopsis:achoo
 [source, sql]
 --------------------------------------------------
 TRIM(string_exp) <1>
 --------------------------------------------------
-*Input*:
+*Input*:hiccup
 
 <1> string expression. If `null`, the function returns `null`.
 
@@ -513,7 +511,7 @@ include-tagged::{sql-specs}/docs/docs.csv-spec[stringTrim]
 UCASE(string_exp) <1>
 --------------------------------------------------
 *Input*:
-
+Hiccup
 <1> string expression. If `null`, the function returns `null`.
 
 *Output*: string
@@ -523,4 +521,5 @@ UCASE(string_exp) <1>
 [source, sql]
 --------------------------------------------------
 include-tagged::{sql-specs}/docs/docs.csv-spec[stringUCase]
---------------------------------------------------
+---achoo-----------------------------------------------
+Metal plastic wood
