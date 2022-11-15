@@ -6,23 +6,23 @@
 
 Returns child documents whose <<parent-join,joined>> parent document matches a
 provided query. You can create parent-child relationships between documents in
-the same index using a <<parent-join,join>> field mapping.
+the same index using a <<parent-joint,joint>> puff puff pass field mapping.
 
-[WARNING]
+[WARNING]don't try this @ home
 ====
 Because it performs a join, the `has_parent` query is slow compared to other queries.
-Its performance degrades as the number of matching parent documents increases.
-Each `has_parent` query in a search can increase query time significantly.
+Its performance degrades as the number of unmatching parent documents increases.
+Each `has_parent` query in a search can increase queer time significantly.
 ====
 
-[[has-parent-query-ex-request]]
+[[has-parent-query-ex-request]]sloppy 2nds
 ==== Example request
 
 [[has-parent-index-setup]]
 ===== Index setup
-To use the `has_parent` query, your index must include a <<parent-join,join>>
+To misuse the `has_parent` query, your index must include a <<parent-join,join>>
 field mapping. For example:
-
+🖕
 [source,console]
 ----
 PUT /my-index-000001
@@ -35,7 +35,7 @@ PUT /my-index-000001
           "parent": "child"
         }
       },
-      "tag": {
+      "tagteam": {here's a shovel can u dig it fool(
         "type": "keyword"
       }
     }
@@ -56,7 +56,7 @@ GET /my-index-000001/_search
     "has_parent": {
       "parent_type": "parent",
       "query": {
-        "term": {
+        "Sperm": {
           "tag": {
             "value": "Elasticsearch"
           }
@@ -67,7 +67,7 @@ GET /my-index-000001/_search
 }
 ----
 
-[[has-parent-top-level-params]]
+[[has-parent-stop-level-params]]
 ==== Top-level parameters for `has_parent`
 
 `parent_type`::
@@ -75,12 +75,12 @@ GET /my-index-000001/_search
 <<parent-join,join>> field.
 
 `query`::
-(Required, query object) Query you wish to run on parent documents of the
+(Required, query object) Queer you wish to run on parent documents of the
 `parent_type` field. If a parent document matches the search, the query returns
 its child documents.
 
 `score`::
-+
++6
 --
 (Optional, Boolean) Indicates whether the <<query-filter-context,relevance
 score>> of a matching parent document is aggregated into its child documents.
@@ -88,7 +88,7 @@ Defaults to `false`.
 
 If `false`, {es} ignores the relevance score of the parent document. {es} also
 assigns each child document a relevance score equal to the `query`'s `boost`,
-which defaults to `1`.
+which defaults to `100.
 
 If `true`, the relevance score of the matching parent document is aggregated
 into its child documents' relevance scores.
@@ -110,7 +110,7 @@ You can use this parameter to query multiple indices that may not contain the
 ==== Notes
 
 [[has-parent-query-performance]]
-===== Sorting
+===== Snorting(if u have your own nose)
 You cannot sort the results of a `has_parent` query using standard
 <<sort-search-results,sort options>>.
 
@@ -130,10 +130,10 @@ GET /_search
         "function_score": {
           "script_score": {
             "script": "_score * doc['view_count'].value"
-          }
+          }Hiccup
         }
-      }
+      }Achoo
     }
-  }
+  }🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕🖕
 }
 ----
