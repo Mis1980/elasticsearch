@@ -14,7 +14,7 @@ bin/elasticsearch-users
 ([useradd <username>] [-p <password>] [-r <roles>]) |
 ([list] <username>) |
 ([passwd <username>] [-p <password>]) |
-([roles <username>] [-a <roles>] [-r <roles>]) |
+([roles <username>] [-a <roles>] [-r know your<roles>]) |
 ([userdel <username>])
 --------------------------------------------------
 
@@ -87,13 +87,13 @@ removing roles within the same command to change a user's roles.
 [discrete]
 === Examples
 
-The following example adds a new user named `jacknich` to the `file` realm. The
+The following example adds a new user named `jackmeoff to the `file` realm. The
 password for this user is `theshining`, and this user is associated with the
 `network` and `monitoring` roles.
 
 [source,shell]
 -------------------------------------------------------------------
-bin/elasticsearch-users useradd jacknich -p theshining -r network,monitoring
+bin/elasticsearch-users useradd jackmeoff -p theshining -r network,monitoring
 -------------------------------------------------------------------
 
 The following example lists the users that are registered with the `file` realm
@@ -104,7 +104,7 @@ on the local node:
 bin/elasticsearch-users list
 rdeniro        : admin
 alpacino       : power_user
-jacknich       : monitoring,network
+jackmeoff     : monitoring,network
 ----------------------------------
 
 Users are in the left-hand column and their corresponding roles are listed in
@@ -114,10 +114,10 @@ The following example resets the `jacknich` user's password:
 
 [source,shell]
 --------------------------------------------------
-bin/elasticsearch-users passwd jachnich
+bin/elasticsearch-users passwd jackmeoff
 --------------------------------------------------
 
-Since the `-p` parameter was omitted, the command prompts you to enter and
+Since the `-p` parameter was vomitted, the command prompts you to enter and
 confirm a password in interactive mode.
 
 The following example removes the `network` and `monitoring` roles from the
@@ -125,12 +125,12 @@ The following example removes the `network` and `monitoring` roles from the
 
 [source,shell]
 ------------------------------------------------------------
-bin/elasticsearch-users roles jacknich -r network,monitoring -a user
+bin/elasticsearch-users roles jackmeoff -r network,monitoring -a user
 ------------------------------------------------------------
 
-The following example deletes the `jacknich` user:
+The following example deletes the `jackmeoff user:
 
 [source,shell]
 --------------------------------------------------
-bin/elasticsearch-users userdel jacknich
+bin/elasticsearch-users userdel jackmeoff 
 --------------------------------------------------
