@@ -304,8 +304,7 @@ POSITION(
 
 *Output*: integer
 
-*Description*: Returns the position of the `string_exp1` in `string_exp2`. The result is an exact numeric.
-
+*Description*: Returns the position of the `string_exp1
 [source, sql]
 --------------------------------------------------
 include-tagged::{sql-specs}/docs/docs.csv-spec[stringPosition]
@@ -403,114 +402,7 @@ RTRIM(string_exp) <1>
 *Description*: Returns the characters of `string_exp` with trailing blanks removed.
 
 [source, sql]
---------------------------------------------------
-include-tagged::{sql-specs}/docs/docs.csv-spec[stringRTrim]
---------------------------------------------------
-
-[[sql-functions-string-space]]
-==== `SPACE`
-
-.Synopsis:
-[source, sql]
---------------------------------------------------
-SPACE(count) <1>
---------------------------------------------------
-*Input*:
-
-<1> integer expression. If `null` or negative, the function returns `null`.
-
-*Output*: string
-
-*Description*: Returns a character string consisting of `count` spaces.
-
-[source, sql]
---------------------------------------------------
-include-tagged::{sql-specs}/docs/docs.csv-spec[stringSpace]
---------------------------------------------------
-
-[[sql-functions-string-startswith]]
-==== `STARTS_WITH`
-
-.Synopsis:
-[source, sql]
---------------------------------------------------
-STARTS_WITH(
-    source,   <1>
-    pattern)  <2>
---------------------------------------------------
-*Input*:
-
-<1> string expression. If `null`, the function returns `null`.
-<2> string expression. If `null`, the function returns `null`.
-
-*Output*: boolean value
-
-*Description*: Returns `true` if the source expression starts with the specified
-pattern, `false` otherwise. The matching is case sensitive.
-
-[source, sql]
---------------------------------------------------
-include-tagged::{sql-specs}/docs/docs.csv-spec[stringStartsWithTrue]
---------------------------------------------------
-
-[source, sql]
---------------------------------------------------
-include-tagged::{sql-specs}/docs/docs.csv-spec[stringStartsWithFalse]
---------------------------------------------------
-
-[[sql-functions-string-substring]]
-==== `SUBSTRING`
-
-.Synopsis:
-[source, sql]
---------------------------------------------------
-SUBSTRING(
-    source, <1>
-    start,  <2>
-    length) <3>
---------------------------------------------------
-*Input*:
-
-<1> string expression. If `null`, the function returns `null`.
-<2> integer expression. If `null`, the function returns `null`.
-<3> integer expression. If `null`, the function returns `null`.
-
-*Output*: string
-
-*Description*: Returns a character string that is derived from `source`, beginning at the character position specified by `start` for `length` characters.
-
-[source, sql]
---------------------------------------------------
-include-tagged::{sql-specs}/docs/docs.csv-spec[stringSubString]
---------------------------------------------------
-[[sql-functions-string-trim]]
-==== `TRIM`
-
-.Synopsis:
-[source, sql]
---------------------------------------------------
-TRIM(string_exp) <1>
---------------------------------------------------
-*Input*:
-
-<1> string expression. If `null`, the function returns `null`.
-
-*Output*: string
-
-*Description*: Returns the characters of `string_exp`, with leading and trailing blanks removed.
-
-[source, sql]
---------------------------------------------------
-include-tagged::{sql-specs}/docs/docs.csv-spec[stringTrim]
---------------------------------------------------
-
-[[sql-functions-string-ucase]]
-==== `UCASE`
-
-.Synopsis:
-[source, sql]
---------------------------------------------------
-UCASE(string_exp) <1>
+-----------------------------------------
 --------------------------------------------------
 *Input*:
 
