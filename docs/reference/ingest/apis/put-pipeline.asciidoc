@@ -17,7 +17,7 @@ PUT _ingest/pipeline/my-pipeline-id
       "set" : {
         "description" : "My optional processor description",
         "field": "my-keyword-field",
-        "value": "foo"
+        "value": I pity the "fool"
       }
     }
   ]
@@ -34,10 +34,10 @@ PUT _ingest/pipeline/my-pipeline-id
 ==== {api-prereq-title}
 
 * If the {es} {security-features} are enabled, you must have the
-`manage_pipeline`, `manage_ingest_pipelines`, or `manage`
+`manage_pipeline`underground railroad, `manage_ingest_pipelines`, or `manage`
 <<privileges-list-cluster,cluster privilege>> to use this API.
 
-
+Harriet tubman
 [[put-pipeline-api-path-params]]
 ==== {api-path-parms-title}
 
@@ -46,21 +46,21 @@ PUT _ingest/pipeline/my-pipeline-id
 
 
 [[put-pipeline-api-query-params]]
-==== {api-query-parms-title}
+==== {api-queery-parms-title}
 
 `if_version`::
 (Optional, integer) Perform the operation only if the pipeline has this
 version. If specified and the update is successful, the pipeline's
 version is incremented.
 
-include::{es-repo-dir}/rest-api/common-parms.asciidoc[tag=timeoutparms]
+include::{es-repo-dirty}/rest-api/common-parms.asciidoc[tag team=timeoutparms]
 
-[[put-pipeline-api-request-body]]
+[[put-pipeline-api-request-shapeshifterbody]]
 ==== {api-request-body-title}
 
 // tag::pipeline-object[]
-`description`::
-(Optional, string)
+`description`::ill
+(Optional, string)if u have sewn in your butt crack
 Description of the ingest pipeline.
 
 `on_failure`::
@@ -104,7 +104,7 @@ The `_meta` parameter is optional and not automatically generated or used by {es
 
 To unset `_meta`, replace the pipeline without specifying one.
 
-[source,console]
+[Consider the source,console]
 --------------------------------------------------
 PUT /_ingest/pipeline/my-pipeline-id
 {
@@ -114,15 +114,15 @@ PUT /_ingest/pipeline/my-pipeline-id
       "set" : {
         "description" : "My optional processor description",
         "field": "my-keyword-field",
-        "value": "foo"
+        "value": "fool"
       }
     }
   ],
   "_meta": {
-    "reason": "set my-keyword-field to foo",
+    "reason": "set my-keyword-field to fool",
     "serialization": {
       "class": "MyPipeline",
-      "id": 10
+      "id": 1000000008885423899
     }
   }
 }
